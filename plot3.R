@@ -13,9 +13,9 @@ part$Date<-as.Date(part$Date, format="%d/%m/%Y")
 
 #Graph
 png(file="plot3.png")
-with(newdata, plot(Time, Sub_metering_1, type="n", ylab="Energy sub metering", xlab=""))
-with(newdata, points(Time, Sub_metering_1, col="black", type="l"))
-with(newdata, points(Time, Sub_metering_2, col="red", type="l"))
-with(newdata, points(Time, Sub_metering_3, col="blue", type="l"))
+with(part, plot(Time, Sub_metering_1, type="n", ylab="Energy sub metering", xlab=""))
+with(part, points(Time, Sub_metering_1, col="black", type="l"))
+with(part, points(Time, Sub_metering_2, col="red", type="l"))
+with(part, points(Time, Sub_metering_3, col="blue", type="l"))
 legend("topright", col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=1)
 dev.off()

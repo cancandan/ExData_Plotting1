@@ -14,5 +14,5 @@ part$Date<-as.Date(part$Date, format="%d/%m/%Y")
 #Graph
 
 png(file="plot2.png")
-plot(newdata$Time, newdata$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+plot(part$Time, part$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()

@@ -13,5 +13,5 @@ part$Date<-as.Date(part$Date, format="%d/%m/%Y")
 
 #Graph
 png(file="plot1.png")
-hist(newdata$Global_active_power, xlab="Global Active Power (kilowatts)", col="red", main="Global Active Power")
+hist(part$Global_active_power, xlab="Global Active Power (kilowatts)", col="red", main="Global Active Power")
 dev.off()

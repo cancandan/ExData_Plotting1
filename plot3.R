@@ -2,7 +2,7 @@
 onerow<-read.csv("household_power_consumption.txt",sep=";", na.strings=c("?"), nrow=1)
 
 #Read relevant portion
-part<-read.csv("household_power_consumption.txt",sep=";", skip=66636, nrow=2880)
+part<-read.csv("household_power_consumption.txt",sep=";",na.strings=c("?"), skip=66636, nrow=2880)
 
 #Fix names
 names(part)<-names(onerow)
